@@ -10,6 +10,10 @@ import RolesIndex from './cruds/Roles'
 import RolesSingle from './cruds/Roles/single'
 import UsersIndex from './cruds/Users'
 import UsersSingle from './cruds/Users/single'
+import FaqCategoriesIndex from './cruds/FaqCategories'
+import FaqCategoriesSingle from './cruds/FaqCategories/single'
+import FaqQuestionsIndex from './cruds/FaqQuestions'
+import FaqQuestionsSingle from './cruds/FaqQuestions/single'
 
 Vue.use(Vuex)
 
@@ -24,7 +28,11 @@ export default new Vuex.Store({
     RolesIndex,
     RolesSingle,
     UsersIndex,
-    UsersSingle
+    UsersSingle,
+    FaqCategoriesIndex,
+    FaqCategoriesSingle,
+    FaqQuestionsIndex,
+    FaqQuestionsSingle
   },
   strict: debug
 })

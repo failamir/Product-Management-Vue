@@ -96,6 +96,62 @@ const routes = [
             meta: { title: 'cruds.user.title' }
           }
         ]
+      },
+      {
+        path: 'faq-management',
+        name: 'faq_management',
+        component: View,
+        redirect: { name: 'faq_categories.index' },
+        children: [
+          {
+            path: 'faq-categories',
+            name: 'faq_categories.index',
+            component: () => import('@cruds/FaqCategories/Index.vue'),
+            meta: { title: 'cruds.faqCategory.title' }
+          },
+          {
+            path: 'faq-categories/create',
+            name: 'faq_categories.create',
+            component: () => import('@cruds/FaqCategories/Create.vue'),
+            meta: { title: 'cruds.faqCategory.title' }
+          },
+          {
+            path: 'faq-categories/:id',
+            name: 'faq_categories.show',
+            component: () => import('@cruds/FaqCategories/Show.vue'),
+            meta: { title: 'cruds.faqCategory.title' }
+          },
+          {
+            path: 'faq-categories/:id/edit',
+            name: 'faq_categories.edit',
+            component: () => import('@cruds/FaqCategories/Edit.vue'),
+            meta: { title: 'cruds.faqCategory.title' }
+          },
+          {
+            path: 'faq-questions',
+            name: 'faq_questions.index',
+            component: () => import('@cruds/FaqQuestions/Index.vue'),
+            meta: { title: 'cruds.faqQuestion.title' }
+          },
+          {
+            path: 'faq-questions/create',
+            name: 'faq_questions.create',
+            component: () => import('@cruds/FaqQuestions/Create.vue'),
+            meta: { title: 'cruds.faqQuestion.title' }
+          },
+          {
+            path: 'faq-questions/:id',
+            name: 'faq_questions.show',
+            component: () => import('@cruds/FaqQuestions/Show.vue'),
+            meta: { title: 'cruds.faqQuestion.title' }
+          },
+          {
+            path: 'faq-questions/:id/edit',
+            name: 'faq_questions.edit',
+            component: () => import('@cruds/FaqQuestions/Edit.vue'),
+            meta: { title: 'cruds.faqQuestion.title' }
+          }
+        ]
       }
     ]
   }

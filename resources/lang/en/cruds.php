@@ -2,12 +2,12 @@
 
 return [
     'userManagement' => [
-        'title'          => 'Manajemen User',
-        'title_singular' => 'Manajemen User',
+        'title'          => 'User management',
+        'title_singular' => 'User management',
     ],
     'permission' => [
-        'title'          => 'Izin',
-        'title_singular' => 'Izin',
+        'title'          => 'Permissions',
+        'title_singular' => 'Permission',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
@@ -22,8 +22,8 @@ return [
         ],
     ],
     'role' => [
-        'title'          => 'Peranan',
-        'title_singular' => 'Peranan',
+        'title'          => 'Roles',
+        'title_singular' => 'Role',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => ' ',
@@ -40,7 +40,7 @@ return [
         ],
     ],
     'user' => [
-        'title'          => 'Daftar Pengguna',
+        'title'          => 'Users',
         'title_singular' => 'User',
         'fields'         => [
             'id'                       => 'ID',
