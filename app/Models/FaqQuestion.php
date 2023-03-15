@@ -10,7 +10,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class FaqQuestion extends Model
 {
-    use HasAdvancedFilter, SoftDeletes, HasFactory;
+    use HasAdvancedFilter;
+    use SoftDeletes;
+    use HasFactory;
 
     public $table = 'faq_questions';
 
