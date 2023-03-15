@@ -58,6 +58,26 @@ export default {
               gate: 'user_access'
             }
           ]
+        },
+        {
+          title: 'cruds.faqManagement.title',
+          icon: 'table_view',
+          path: { name: 'faq_management' },
+          gate: 'faq_management_access',
+          children: [
+            {
+              title: 'cruds.faqCategory.title',
+              icon: 'table_view',
+              path: { name: 'faq_categories.index' },
+              gate: 'faq_category_access'
+            },
+            {
+              title: 'cruds.faqQuestion.title',
+              icon: 'table_view',
+              path: { name: 'faq_questions.index' },
+              gate: 'faq_question_access'
+            }
+          ]
         }
       ]
     }

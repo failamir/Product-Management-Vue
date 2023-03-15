@@ -12,6 +12,11 @@ return [
             'title'      => 'Indonesian',
             'short_code' => 'id',
         ],
+        [
+            'title'      => 'English',
+            'short_code' => 'en',
+        ],
     ],
+    'registered_user_role' => 'User',
 
 ];
