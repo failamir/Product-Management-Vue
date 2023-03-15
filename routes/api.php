@@ -8,6 +8,9 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     Route::get('locales/languages', 'LocalesController@languages')->name('locales.languages');
     Route::get('locales/messages', 'LocalesController@messages')->name('locales.messages');
 
+    // Dashboard
+    Route::get('dashboard', 'DashboardApiController@index')->name('dashboard');
+
     // Permissions
     Route::resource('permissions', 'PermissionsApiController');
 
