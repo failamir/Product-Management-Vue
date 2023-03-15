@@ -3,7 +3,7 @@
 Route::redirect('/', '/login');
 Route::redirect('/dashboard', '/admin/dashboard');
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::group([
     'prefix'     => 'admin',
